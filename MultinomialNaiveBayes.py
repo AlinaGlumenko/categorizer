@@ -39,7 +39,6 @@ path_labels_test = os.getcwd() + "\\Pickles\\labels_test.pickle"
 with open(path_labels_test, 'rb') as data:
     labels_test = pickle.load(data)
 
-
 #%%
 # check the dimension of our feature vectors
 print(features_train.shape)

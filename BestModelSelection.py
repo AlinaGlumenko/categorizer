@@ -4,10 +4,9 @@ import pandas as pd
 
 #%%
 # need to get the performance metrics generated in every model
-path_pickles = "/home/lnc/0. Latest News Classifier/04. Model Training/Models/"
+path_pickles = os.getcwd() + "\\Models\\"
 
 list_pickles = [
-    "df_models_gbc.pickle",
     "df_models_knnc.pickle",
     "df_models_lrc.pickle",
     "df_models_mnbc.pickle",

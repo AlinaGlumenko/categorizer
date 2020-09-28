@@ -36,7 +36,7 @@ def getContentForDf(rawDataPath, categoryName):
 
     with os.scandir(rawDataPath) as entries:
         for entry in entries:
-            f = codecs.open(entry, "r", "utf_8_sig" )
+            f = codecs.open(entry, "r", "utf_8_sig")
             data = f.read()
 
             # print(entry.name)
