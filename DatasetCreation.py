@@ -21,7 +21,7 @@ def getContentType(filePath):
             return 'xml'
         elif 'html' in contentType:
             return 'html'
-        if 'json' in contentType or f.read(1) in '{[':
+        elif 'json' in contentType or f.read(1) in '{[':
             return 'json'
         elif 'text' in contentType:
             return 'txt'
